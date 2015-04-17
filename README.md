@@ -1,4 +1,4 @@
-# Email-Id Validator
+# Email Id Validator
 
 Simple email id validator tool to check email id is valid or fake.
 

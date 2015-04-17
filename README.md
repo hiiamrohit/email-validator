@@ -1,5 +1,5 @@
-# email-validator
-Email validator tool to check email is valid or fake.
+# Email-Id Validator
 
-Simple email validator tool written in php and jquery
+Simple email id validator tool to check email id is valid or fake.
+``Technology Used: PHP, Jquery``
 

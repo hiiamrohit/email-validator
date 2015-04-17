@@ -10,9 +10,10 @@ $(function() {
             return false;
         }
         $("ul li#nodata").remove();
-        loadingShow();
-        getEmailData(email);
-
+        var emailData = email.split(',');
+        $.each(emailData, function(index, val) {
+            getEmailData($.trim(val));
+        });
     });
 
 // show loading message
@@ -32,8 +33,9 @@ $(function() {
     }
 
    
-// function to fetch blog data with sussess and error 
+// function to fetch email data with sussess and error 
     var getEmailData = function(email) {
+        loadingShow();
         var successRes = function(data) {
             loadingHide();
             if (typeof data === 'object') {

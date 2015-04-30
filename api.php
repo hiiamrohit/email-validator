@@ -5,7 +5,7 @@
 * Version: 0.0.1
 * Date: 14-04-2015
 * App Name: Email Validator
-* Description: Simple email id validator to check email id is valid of fake.
+* Description: Simple email id validator to check email id is valid or fake.
 */
 error_reporting(0);
 ob_start();

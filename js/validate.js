@@ -43,7 +43,7 @@ $(function() {
                    if(data.tp==1) {
                      html = "<li class='list-group-item'><h4 style='color:green'><span class='glyphicon glyphicon-ok-sign'></span> "+data.email+":- <b>Valid</b></h4></li>";
                    } else {
-                      html = "<li class='list-group-item'><h4 style='color:red'><span class='glyphicon glyphicon-remove-sign'></span> "+data.email+":- <b>Bad</b></h4></li>";
+                      html = "<li class='list-group-item'><h4 style='color:red'><span class='glyphicon glyphicon-remove-sign'></span> "+data.email+":- <b>Invalid</b></h4></li>";
                    }
                     $("ul#emailList").prepend(html);
 

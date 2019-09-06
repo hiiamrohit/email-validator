@@ -11,8 +11,8 @@ error_reporting(0);
 ob_start();
 header('Content-Type: application/json');
 include_once("classes/emailValidator.php");
-
-$ev = new emailValidator('iamrohitx@gmail.com');			
+$formEmail = 'example@gmail.com';
+$ev = new emailValidator($formEmail);			
 function validate($ev, $email) {
 	try {	
           if(!isset($email) || empty($email)) {
@@ -32,15 +32,10 @@ function validate($ev, $email) {
 	}
 }
 
-$requestType = $_GET['type'];
-if(!isset($requestType) && empty($requestType)) {
-	 $data = array('status'=>'error', 'msg'=>'Request type is not set.', 'tp'=>0);
-	 echo json_encode($data);
-}
-if($requestType == 'email-validator') {
-	$result = validate($ev, $_GET['email']);
+        $toEmail = "xyz@gmail.com";
+	$result = validate($ev, $toEmail);
 	echo $result;
-}
+
 ob_flush();
 
 
